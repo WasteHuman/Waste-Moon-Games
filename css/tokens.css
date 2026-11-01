@@ -1,0 +1,28 @@
+:root{
+  --bg: #0b0b0c;
+  --bg-glow: #2b1810;
+  --card: #131315;
+  --text: #e6e6e6;
+  --muted: #8a8a8a;
+  --accent: #e8692c;
+  --accent-hover: #ff8a4c;
+  --on-accent: #fff;
+  --btn-bg: #c2410c;
+  --btn-bg-hover: #9a3412;
+
+  /*---Шрифты---*/
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Michroma", var(--font-body);
+
+  /*---Шкала отступов---*/
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px; --space-16: 64px; --space-24: 96px;
+
+  /*---Радиусы---*/
+  --raduis-s: 12px;
+  --radius: 16px;
+
+  /*---Прочее---*/
+  --container: 1100px;
+  --ease: 0.2s;
+}
