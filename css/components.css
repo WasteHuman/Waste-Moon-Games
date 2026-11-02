@@ -54,6 +54,44 @@
 
 .btn--ghost:hover { background: rgba(255, 255, 255, 0.06); }
 
+/*---------- Шапка ----------*/
+.site-header{
+  padding-block: var(--space-6);
+}
+
+.site-header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand{
+  width: min-content;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-8);
+}
+
+.nav__link{
+  font-size: 0.7rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+}
+
 /*---------- Карточка игры ----------*/
 .game{
   display: flex;

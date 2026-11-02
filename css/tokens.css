@@ -25,6 +25,7 @@
 
   /*---Прочее---*/
   --container: 1100px;
+  --tracking-wide: 0.15rem;
 
   /*---Анимации---*/
   --duration: 0.2s;
