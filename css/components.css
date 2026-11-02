@@ -35,11 +35,6 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
-.btn:focus-visible{
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
-}
-
 .btn--social{
   justify-content: center;
   gap: var(--space-2);
@@ -74,6 +69,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text);
+  transition: color var(--duration);
+}
+
+.brand:hover{
+  color: var(--accent-hover);
 }
 
 .nav__list{
@@ -85,11 +85,33 @@
 }
 
 .nav__link{
+  display: inline-flex;
   font-size: 0.7rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   text-decoration: none;
   color: var(--muted);
+}
+
+.nav__link:hover{
+  color: var(--text);
+}
+
+.nav__link--cta{
+  color: var(--accent);
+}
+
+.nav__link--cta:hover{
+  color: var(--accent-hover);
+}
+
+.nav__link .icon{
+  width: 1rem;
+  height: 1rem;
+  transition: transform var(--duration);
+}
+.nav__link--cta:hover .icon{
+  transform: translate(2px, -2px);
 }
 
 /*---------- Карточка игры ----------*/
@@ -116,11 +138,6 @@
   background: linear-gradient(135deg,
     color-mix(in srgb, var(--accent) 28%, transparent),
     color-mix(in srgb, var(--accent) 10%, transparent));
-}
-
-.game:focus-visible{
-  outline: 3px solid var(--accent-hover);
-  outline-offset: 3px;
 }
 
 .game__icon{
@@ -164,7 +181,8 @@
 }
 
 @media (prefers-reduced-motion: reduce){
-  .btn, .game, .game__arrow { transition: none; }
+  .btn, .game, .game__arrow, .nav__link .icon { transition: none; }
   .btn:hover, .game:hover { transform: none; }
   .game:hover .game__arrow { transform: none; }
+  .nav__link--cta:hover .icon { transform: none; }
 }

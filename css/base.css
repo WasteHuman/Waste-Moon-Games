@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+:focus-visible{
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
 /* ВРЕМЕННО */
 main, footer { text-align: center; }
 main { padding-block: var(--space-12); }
@@ -97,4 +102,8 @@ footer{
 
 @media (max-width: 480px) {
   .links { margin-inline: 0; }
+}
+
+@media (prefers-reduced-motion: no-preference){
+  html{ scroll-behavior: smooth; }
 }
