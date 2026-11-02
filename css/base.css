@@ -63,8 +63,6 @@ h2{
   gap: var(--space-3);
 }
 
-.contacts{ margin-top: var(--space-2); }
-
 .socials{
   list-style: none;
   margin: 0;

@@ -21,12 +21,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 18px;
-  color: #fff;
+  color: var(--on-accent);
   text-decoration: none;
   font-weight: 600;
   background: var(--btn-bg);
-  border-radius: 12px;
-  transition: transform 0.15s, background 0.15s;
+  border-radius: var(--radius-s);
+  transition: transform var(--duration-fast), background var(--duration-fast);
 }
 
 .btn:hover{
@@ -36,13 +36,13 @@
 }
 
 .btn:focus-visible{
-  outline: 3px solid #fff;
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
 .btn--social{
   justify-content: center;
-  gap: 8px;
+  gap: var(--space-2);
 }
 
 .btn--ghost{
@@ -59,14 +59,14 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 12px 16px 12px 12px;
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-3);
   text-decoration: none;
   color: var(--text);
   background: linear-gradient(135deg,
     color-mix(in srgb, var(--accent) 18%, transparent),
     color-mix(in srgb, var(--accent) 6%, transparent));
   border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
-  border-radius: 16px;
+  border-radius: var(--radius);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
@@ -89,7 +89,7 @@
   width: 56px;
   height: 56px;
   flex: none;
-  border-radius: 16px;
+  border-radius: var(--radius);
   object-fit: cover;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
 }
@@ -117,7 +117,7 @@
   width: 1.4rem;
   height: 1.4rem;
   color: var(--accent);
-  transition: transform 0.2s, color 0.2s;
+  transition: transform var(--duration), color var(--duration);
 }
 
 .game:hover .game__arrow{
@@ -126,6 +126,7 @@
 }
 
 @media (prefers-reduced-motion: reduce){
-  .game, .game__arrow { transition: none; }
-  .game:hover { transform: none; }
+  .btn, .game, .game__arrow { transition: none; }
+  .btn:hover, .game:hover { transform: none; }
+  .game:hover .game__arrow { transform: none; }
 }
