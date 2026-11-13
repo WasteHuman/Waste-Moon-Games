@@ -180,6 +180,9 @@
   color: var(--text);
 }
 
+/*---------- Карточка обо мне ----------*/
+
+
 @media (prefers-reduced-motion: reduce){
   .btn, .game, .game__arrow, .nav__link .icon { transition: none; }
   .btn:hover, .game:hover { transform: none; }
